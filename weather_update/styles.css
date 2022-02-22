@@ -1,0 +1,55 @@
+*{
+
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+
+
+    height: 100vh;
+    background-color: cornflowerblue;
+    background-image: linear-gradient(deepskyblue,cornflowerblue);
+}
+
+#app-container{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+#temp_icon{
+    padding-top: 20%;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+}
+
+
+#temp{
+    text-align: center;
+}
+#temp_value{
+    color: white;
+    font-size: 10rem;
+}
+#temp #temp_init{
+    color: white;
+font-size: 10rem;
+}
+#location{
+    font-family: sans-serif;
+color: white;
+    font-size: 4rem;
+}
+
+#climate{
+
+    font-size: 7rem;
+}
+
+
