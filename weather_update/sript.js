@@ -2,7 +2,7 @@ let loc=document.getElementById("location")
 let temp_icon =document.getElementById("temp_icon")
 let temp_value= document.getElementById("temp_value")
 let climate = document.getElementById("climate")
-let iconfile;
+
 window.addEventListener("load",()=>{
 let long;
 let lag;
@@ -25,7 +25,7 @@ if (navigator.geolocation){
                 const{id,main}= data.weather[0];
                 loc.textContent=name;
                 climate.textContent = main;
-                temp_value.textContent= Math.round(feels_like-273) +"°C";
+                temp_value.textContent= Math.round(feels_like-273);
                 if (id<250){
                     temp_icon.src='icons/thunder.png'
                 }
